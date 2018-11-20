@@ -1,60 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="323dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:text="Fill in the words to complete the story!"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="31dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="149dp"
-        android:layout_marginEnd="149dp"
-        android:text="Word(s) left"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="97dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="Fill in words to complete the story!"
+        android:textSize="27dp" />
+
+    <TextView
+        android:id="@+id/wordsLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="25dp"
+        android:text="TextView" />
 
     <EditText
-        android:id="@+id/input"
-        android:layout_width="236dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
+        android:id="@+id/enterWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="word"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="122dp"
-        tools:ignore="MissingConstraints" />
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="TextView" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="93dp"
-        android:layout_height="50dp"
-        android:text="Ok"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="122dp"
-        tools:ignore="MissingConstraints" />
-
-</android.support.constraint.ConstraintLayout>
+        android:layout_width="157dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="updateInfo"
+        android:text="Enter" />
+</LinearLayout>

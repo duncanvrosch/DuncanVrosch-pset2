@@ -1,50 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="263dp"
-        android:layout_height="111dp"
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_weight="1"
         android:gravity="center"
-        android:text="Welcome to Mad Libs! I will ask you to fill in words to complete a story! Thanks in advance! Click on the button below to get started!"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="322dp"
-        android:layout_height="wrap_content"
-        android:text="Let's start!"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="447dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="37dp"
-        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="25dp"
+        android:paddingRight="15dp"
         android:text="MAD LIBS"
-        android:textSize="30sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="126dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:textSize="36sp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="235dp"
-        android:layout_height="224dp"
-        app:srcCompat="@drawable/madlibs"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="195dp" />
+        android:layout_width="256dp"
+        android:layout_height="263dp"
+        android:layout_gravity="center"
+        android:paddingTop="20dp"
+        tools:srcCompat="@tools:sample/avatars[11]" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="25dp"
+        android:paddingRight="15dp"
+        android:text="Welcome to Mad Libs! I will ask you to fill in words to complete a story! Thanks in advance! Click on the button below to get started!"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Let's start!" />
+
+</LinearLayout>
