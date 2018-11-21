@@ -3,7 +3,7 @@
 In deze app kun je woorden toevoegen om een verhaal compleet te maken!
 
 Homepagina
-![alt text](https://github.com/duncanvrosch/DuncanVrosch-pset2/blob/master/doc/Screenshot_20181121-105046.png =250x)
+![alt text](https://github.com/duncanvrosch/DuncanVrosch-pset2/blob/master/doc/Screenshot_20181121-105046.png)
 
 Pagina om je verhaal te kiezen
 ![alt text](https://github.com/duncanvrosch/DuncanVrosch-pset2/blob/master/doc/Screenshot_20181121-105050.png)
