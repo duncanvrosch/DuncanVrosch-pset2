@@ -20,7 +20,7 @@ public class SecondActivity extends AppCompatActivity {
         story = (Story) intent.getSerializableExtra("story");
 
         TextView wordsLeft = findViewById(R.id.wordsLeft);
-        int wordAmount = story.getPlaceholderCount();
+        int wordAmount = story.getPlaceholderRemainingCount();
         wordsLeft.setText("Still " + wordAmount + " word(s) left");
 
         EditText enterWord = findViewById(R.id.enterWord);
@@ -30,15 +30,12 @@ public class SecondActivity extends AppCompatActivity {
         prompt.setText("Please enter a/an " + story.getNextPlaceholder() + " now!");
     }
 
-    // updates story and interface when word is entered
     public void updateInfo(View v) {
 
-        // fills in word entered by user
         EditText enterWord = findViewById(R.id.enterWord);
         String word = enterWord.getText().toString();
         story.fillInPlaceholder(word);
-
-        // updates info
+        
         enterWord.setText("");
         TextView wordsLeft = findViewById(R.id.wordsLeft);
         int wordAmount = story.getPlaceholderRemainingCount();
